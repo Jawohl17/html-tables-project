@@ -75,7 +75,7 @@ html1/
 
 ##  Посилання
 
-- **GitHub Repository**: `https://github.com/[ваш-юзернейм]/html-tables-project`
+- **GitHub Repository**: https://github.com/Jawohl17/html-tables-project
 - **GitHub Pages**: `https://[ваш-юзернейм].github.io/html-tables-project/`
 
 >  **Примітка**: Після створення репозиторію на GitHub, оновіть ці посилання на реальні.
