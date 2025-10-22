@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Project - Головна</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card-features li {
+            padding: 5px 0;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .card-features li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        .github-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        .github-link:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 HTML Tables Project</h1>
+            <p class="subtitle">Колекція прикладів роботи з HTML-таблицями</p>
+        </header>
+
+        <div class="cards-container">
+            <a href="table1.html" class="card">
+                <div class="card-icon">📏</div>
+                <h2>Таблиця з різними висотами</h2>
+                <p>Демонстрація використання атрибуту rowspan для створення клітинок з різною висотою.</p>
+                <ul class="card-features">
+                    <li>Використання rowspan</li>
+                    <li>Висока клітинка 200px</li>
+                    <li>Ширина таблиці 75%</li>
+                </ul>
+                <span class="btn">Переглянути →</span>
+            </a>
+
+            <a href="table2.html" class="card">
+                <div class="card-icon">🔗</div>
+                <h2>Вкладена таблиця</h2>
+                <p>Приклад вкладеної таблиці всередині батьківської таблиці з кольоровим оформленням.</p>
+                <ul class="card-features">
+                    <li>Вкладені таблиці</li>
+                    <li>Кольорове оформлення</li>
+                    <li>Ширина таблиці 80%</li>
+                </ul>
+                <span class="btn">Переглянути →</span>
+            </a>
+
+            <a href="table3.html" class="card">
+                <div class="card-icon">🎨</div>
+                <h2>Таблиця Мондріана</h2>
+                <p>Художня композиція в стилі Піта Мондріана, створена за допомогою HTML-таблиці.</p>
+                <ul class="card-features">
+                    <li>Rowspan та colspan</li>
+                    <li>Класичні кольори Мондріана</li>
+                    <li>Розмір 600x600px</li>
+                </ul>
+                <span class="btn">Переглянути →</span>
+            </a>
+        </div>
+
+        <footer>
+            <h3>Про проєкт</h3>
+            <p style="margin-top: 15px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Цей проєкт демонструє різні техніки роботи з HTML-таблицями, 
+                включаючи rowspan, colspan, вкладені таблиці та стилізацію за допомогою CSS.
+            </p>
+            <a href="https://github.com" class="github-link">📂 Переглянути на GitHub</a>
+        </footer>
+    </div>
+</body>
+</html>
+
