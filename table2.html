@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця з вкладеною дочірньою таблицею</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Батьківська таблиця з вкладеною дочірньою таблицею</h1>
+    
+    <div class="table-container">
+        <table class="parent-table">
+            <tr>
+                <td>Клітинка 1</td>
+                <td rowspan="2" class="tall-cell">
+                    <span class="table-label">Висока клітинка (200px)</span>
+                    <table class="child-table">
+                        <tr>
+                            <td>Дочірня 1</td>
+                            <td>Дочірня 2</td>
+                            <td>Дочірня 3</td>
+                        </tr>
+                        <tr>
+                            <td>Дочірня 4</td>
+                            <td>Дочірня 5</td>
+                            <td>Дочірня 6</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="narrow-cell">Клітинка 3</td>
+            </tr>
+            <tr>
+                <td>Клітинка 4</td>
+                <td class="narrow-cell">Клітинка 6</td>
+            </tr>
+            <tr>
+                <td>Клітинка 7</td>
+                <td>Клітинка 8</td>
+                <td class="narrow-cell">Клітинка 9</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="description">
+        <p><strong>Параметри:</strong></p>
+        <p>Батьківська таблиця: 80% ширина, висока клітинка 200px</p>
+        <p>Дочірня таблиця: вкладена всередині високої клітинки</p>
+    </div>
+</body>
+</html>
